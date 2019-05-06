@@ -1,39 +1,40 @@
-.container{
+.container {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   //border: 1px solid #cccccc;
 }
-a, i{
+
+a, i {
   display: block;
 }
 
-.header{
+.header {
   //height: 80px;
-  .container{
+  .container {
     padding: 14px 0;
     box-sizing: border-box;
   }
-  .logo{
+  .logo {
     width: 198px;
     height: 52px;
     background: url("../images/logo/logo.png") no-repeat;
     float: left;
   }
-  .advisory{
+  .advisory {
     float: right;
     border: 1px solid #f45353;
     border-radius: 10px;
     padding: 0 24px;
     box-sizing: border-box;
-    .icon{
+    .icon {
       width: 30px;
       height: 45px;
       background: url("../images/icon/wechart.png") no-repeat center;
       float: left;
       margin-right: 6px;
     }
-    span{
+    span {
       font-size: 18px;
       color: #f45353;
       line-height: 45px;
@@ -41,11 +42,12 @@ a, i{
   }
 }
 
-.banner{
+.banner {
   width: 100%;
   height: 500px;
-  background: url("../images/bg/banner.png") no-repeat;
-  .detail{
+  background: url("../images/bg/banner.png") no-repeat center;
+  //position: relative;
+  .detail {
     text-align: center;
     font-size: 24px;
     line-height: 56px;
@@ -55,36 +57,155 @@ a, i{
     box-sizing: border-box;
     color: #FFFFFF;
     position: absolute;
-    top: 65%;
+    top: 426px;
     left: 50%;
     transform: translateX(-50%);
+    &:hover{
+      background: #f6765f;
+    }
   }
 }
 
 /*承诺*/
-.promise{
-  width: 1000px;
-  height: 130px;
-  border: 1px solid #cccccc;
+.promise {
+  width: 1006px;
+  height: 192px;
+  background: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
   margin-top: -68px;
   border-radius: 10px;
-  padding: 40px 0;
-  box-sizing: border-box;
-  .promise-item{
+  //padding: 40px 0;
+  //box-sizing: border-box;
+  background: url("../images/icon/promise.png") no-repeat center;
+  .promise-item {
     margin: 0 50px;
-    border: 1px solid #000;
-    height: 52px;
-    float: left;
-    .icon{
+    //border: 1px solid #000;
+    //height: 130px;
+    display: inline-block;
+    padding: 38px 0;
+    box-sizing: border-box;
+    .icon {
       width: 57px;
       height: 52px;
       background: url("../images/icon/commitment1.png") no-repeat;
+      float: left;
+      margin-right: 18px;
     }
-    span{
-      font-size: 14px;
-      color: #333333;
+    .text {
+      float: right;
+      .item-h2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: #5859e9;
+      }
+      span {
+        font-size: 14px;
+        color: #333333;
+      }
+    }
+    &:nth-of-type(2){
+      //margin: 0 60px;
+      .icon{
+        background: url("../images/icon/commitment2.png") no-repeat;
+      }
+    }
+    &:nth-of-type(3){
+      .icon{
+        background: url("../images/icon/commitment3.png") no-repeat;
+      }
+    }
+  }
+  .hint{
+    font-size: 16px;
+    text-align: center;
+    line-height: 60px;
+    color: #FFFFFF;
+  }
+}
+
+/*考试*/
+.exam{
+  //border: 1px solid #000;
+  margin-top: 48px;
+  background: url("../images/bg/bg1.png") no-repeat center;
+  .title{
+    width: 100%;
+    height: 95px;
+    background: url("../images/icon/title_1.png") no-repeat center;
+  }
+  .stage{
+    //border: 1px solid #cccccc;
+    margin: 46px -20px;
+    .stage-item{
+      //border: 1px solid #000;
+      width: 296px;
+      height: 320px;
+      //display: inline-block;
+      text-align: center;
+      box-sizing: border-box;
+      margin-right: 14px;
+      float: left;
+      .text{
+        //border: 1px solid #000;
+        font-size: 14px;
+        color: #333333;
+        padding: 20px 54px;
+        box-sizing: border-box;
+        margin-top: 160px;
+        line-height: 30px;
+        text-align: left;
+        p{
+          a{
+            float: left;
+            &:first-child{
+              margin-right: 16px;
+            }
+          }
+        }
+      }
+      &:first-child{
+        background: url("../images/icon/stage_1.png") no-repeat center;
+      }
+      &:nth-of-type(2){
+        background: url("../images/icon/stage_2.png") no-repeat center;
+        .text{
+          text-align: center;
+        }
+      }
+      &:nth-of-type(3){
+        background: url("../images/icon/stage_3.png") no-repeat center;
+      }
+      &:nth-of-type(4){
+        background: url("../images/icon/stage_4.png") no-repeat center;
+        .text{
+          margin-top: 137px;
+        }
+      }
+      &:last-child{
+        margin-right: 0;
+      }
+
+    }
+  }
+  .btn{
+    //border: 1px solid #cccccc;
+    text-align: center;
+    font-size: 18px;
+    .btn-item{
+      padding: 0 62px;
+      line-height: 52px;
+      display: inline-block;
+      color: #f49d36;
+      border: 1px solid #f49d36;
+      border-radius: 46px;
+      &:hover, &.sel{
+        background: #f49d36;
+        color: #FFFFFF;
+      }
+      &:first-child{
+        margin-right: 30px;
+      }
     }
   }
 }
