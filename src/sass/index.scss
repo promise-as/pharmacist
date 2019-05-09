@@ -494,32 +494,43 @@ i{
   background: url("../images/bg/bg6.png") no-repeat center;
   color: #FFFFFF;
   .us-content{
-    width: 60%;
+    width: 55%;
     height: 400px;
-    //border: 1px solid #000;
+    //border: 1px solid #cccccc;
+    padding: 45px 0;
     box-sizing: border-box;
     float: left;
+
     .us-h2{
       font-size: 34px;
       font-weight: bold;
+      line-height: 40px;
+      //border: 1px solid #000;
+      margin-bottom: 20px;
     }
     .detail{
       font-size: 16px;
       line-height: 30px;
+      //border: 1px solid red;
+      margin-bottom: 30px;
     }
     .phone{
       font-size: 24px;
       font-weight: bold;
+      //border: 1px solid yellow;
+      margin-bottom: 20px;
       .icon{
         width: 60px;
         height: 64px;
         background: url("../images/icon/tel.png") no-repeat center;
         float: left;
+        margin-top: 14px;
       }
       .hot-line{
         strong{
           font-size: 36px;
           font-style: italic;
+          padding-right: 4px;
         }
       }
     }
@@ -527,23 +538,32 @@ i{
       font-size: 16px;
     }
   }
+
   .QR-code{
-    width: 40%;
+    width: 45%;
     height: 400px;
-    border: 1px solid #000;
-    padding: 145px 128px 0 100px;
+    //border: 1px solid #000;
+    padding: 10% 0 0 10%;
     box-sizing: border-box;
     float: right;
     font-size: 16px;
     .code-item{
-      width: 120px;
-      height: 142px;
-      border: 1px solid #000;
+      //border: 1px solid #000;
+      padding: 25px;
+      box-sizing: border-box;
       float: left;
+      line-height: 30px;
       .icon{
         width: 108px;
         height: 108px;
         background: url("../images/icon/accounts.png") no-repeat center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      &:nth-of-type(2){
+        .icon{
+          background: url("../images/icon/app.png") no-repeat center;
+        }
       }
     }
   }

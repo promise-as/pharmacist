@@ -1,0 +1,77 @@
+﻿body,html {color:#333;font-family:"Microsoft YaHei";font-size:12px;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {margin:0;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {display:block;margin:0;padding:0;}
+audio,canvas,video {display:inline-block;*display:inline;*zoom:1;}
+input:focus,a:focus {outline:none;}
+fieldset,img {border:0;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym {border:0;font-variant:normal;}
+sub,sup {font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+sup {top:-0.5em;}
+sub {bottom:-0.25em;}
+button,input,textarea,select {font-family:tahoma,arial,simsun,sans-serif;font-size:inherit;font-weight:inherit;line-height:1.5;vertical-align:middle;}
+button,input,textarea,select {*font-size:100%;}
+textarea {resize:none;}
+table {border-collapse:collapse;border-spacing:0;}
+th {text-align:inherit;}
+a {vertical-align:baseline;color:#333;}
+a:hover {text-decoration:none;color:#368ee0;}
+ins,a {text-decoration:none;}
+li,img {vertical-align:top;}
+.clear {display:block;float:none;clear:both;overflow:hidden;background:none;border:0;font-size:0;}
+.clearfix:before,.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+.clearfix {zoom:1;}
+.left,.fl {float:left;display:inline;}
+.right,.fr {float:right;display:inline;}
+.hides,.hide {display:none;}
+img{max-width: 100%;}
+
+/*
+ * At the bottom of the Thea public CSS
+*/
+#theaFooter {width:100%;padding:30px 0 20px; background:#eeeeee; text-align:center;margin-top:20px;color:#666;font-size: 12px;color: #333;}
+#theaFooter li,#theaFooter ul,#theaFooter p{padding: 0px;margin: 0px;}
+#theaFooter .dib-wrap .dib {margin:0 5px;font-size: 12px;letter-spacing: normal;word-spacing: normal;vertical-align: top;display:inline;}
+#theaFooter p {margin:8px 0;color: #666;font-family: "SimSun"}
+#theaFooter .links {color:#999;}
+#theaFooter .links a {margin:0 10px;color:#444;text-decoration: none;font-family: "SimSun"}
+#theaFooter p a:hover{color: #cf3340}
+
+/*
+ * "面授" suspended record list at the bottom of the CSS
+*/
+#foot_zx_con{display: none;width: 100%;padding-top: 3px;height: 127px;background: url(http://img.thea.cn/public/images/publicFootForm/foot_zx.png);position: fixed;bottom:0;left: 0;}
+#foot_zx_con .foot_zx{width: 1200px;margin: 0 auto;}
+#foot_zx_con .foot_zx p{font-size: 14px;line-height: 64px;color: #fff}
+#foot_zx_con .foot_zx p span{font-size: 24px;color: #f0552f;font-weight: 700;}
+#foot_zx_con .foot_form{width: 100%;}
+#foot_zx_con .input_text{width: 178px;padding:5px 20px;line-height: 27px;height: 27px;border: 1px solid #eeeeee;font-size: 14px;float: left;margin-right: 24px;color: #333;}
+#foot_zx_con .form_select{cursor: pointer;width: 100px;padding-left: 19px;height: 37px;border: 1px solid #eee;font-size: 14px;line-height: 37px;margin-right: 24px;float: left;background:url(http://www.thea.cn/TheaApp/Px/View/Public/images/select_bg01.png) 99px 15px no-repeat #fff;position: relative;color: #333;}
+#foot_zx_con .error{border-color: #dd0000;}
+#foot_zx_con .form_btn{cursor: pointer;width: 124px;height: 39px;float: right;font-size: 14px;line-height: 39px;text-align: center;background: #f0552f;border: none;color: #fff;}
+#foot_zx_con .foot_close{width: 20px;height: 20px;background: url(http://img.thea.cn/public/images/publicFootForm/xx.png) center center no-repeat;position: absolute;right: 20px;top: 20px;-webkit-transition:all 0.5s;-moz-transition:all 0.5s;-ms-transition:all 0.5s;transition:all 0.5s;}
+#foot_zx_con .foot_close:hover{-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);}
+#foot_zx_con .form_scroll{width: 90px;height: 156px;padding: 5px 8px 3px 21px;border: 1px solid #dddddd;position: absolute;left: -1px;bottom: 38px;background: #fff;display: none;}
+#foot_zx_con .form_scroll_con{width: 70px;height: 156px;position: relative;overflow: hidden;}
+#foot_zx_con .form_scrollbar{width: 100%;position: absolute;left: 0;top: 0;}
+#foot_zx_con .form_scrollbar li{width: 100%;font-size: 14px;line-height: 26px;cursor: pointer;color: #333;}
+#foot_zx_con .form_scrollbar li:hover{color: #f0552f;}
+#foot_zx_con .form_scrollbar_track{width: 9px;height: 87px;background: #dddddd;position: absolute;right: 8px;top: 9px;}
+#foot_zx_con .form_scrollbar_thumb{width: 9px;height: 31px;position: absolute;left: 0;top: 0;background: #444;border-radius: 5px;}
+
+/*
+ * 底部共用样式
+*/
+#footer{width:100%;padding:30px 0 20px;background:#eee;text-align:center;margin-top:20px;color:#666;font-size:12px;color:#333}
+#footer li,#footer p,#footer ul{padding:0;margin:0}
+#footer li{display:inline}
+#footer .dib-wrap .dib{margin:0 5px;font-size:12px;letter-spacing:normal;word-spacing:normal;vertical-align:top;display:inline}
+#footer p{margin:10px 0 8px 0;color:#666;font-family:"宋体"}
+#footer .links{color:#999}
+#footer .links a{margin-left:11px;padding-right:11px;color:#444;text-decoration:none;font-family:"宋体";display: inline-block;*display: inline;*zoom: 1;height: 12px;line-height: 10px;margin-right: 0;}
+#footer p a:hover{color:#368ee0}
