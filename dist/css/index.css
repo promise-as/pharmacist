@@ -510,6 +510,113 @@ i {
   padding: 40px 72px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border: 1px solid #000;
+  color: #888888;
+  font-size: 14px;
+}
+
+.data-bag .get .types {
+  float: left;
+}
+
+.data-bag .get .types .types-select {
+  display: none;
+}
+
+.data-bag .get .types .types-replace {
+  cursor: default;
+  overflow: visible;
+  position: relative;
+  width: 220px;
+}
+
+.data-bag .get .types .types-replace .current-type {
+  width: 220px;
+  line-height: 45px;
+  background: url("../images/icon/triangle.png") no-repeat 190px center #FFFFFF;
+  border-radius: 5px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.data-bag .get .types .types-replace .types-options {
+  display: none;
+  list-style-type: none;
+  margin-top: 0;
+  position: absolute;
+  width: 220px;
+  border: 1px solid #f78b2b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.data-bag .get .types .types-replace .types-options li {
+  width: 218px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFF;
+}
+
+.data-bag .get .types .types-replace .types-options li:hover {
+  background: #fde8d5;
+}
+
+.data-bag .get .degree {
+  float: right;
+}
+
+.data-bag .get .degree .degree-select {
+  display: none;
+}
+
+.data-bag .get .degree .degree-replace {
+  cursor: default;
+  overflow: visible;
+  position: relative;
+  width: 220px;
+}
+
+.data-bag .get .degree .degree-replace .current-degree {
+  width: 220px;
+  line-height: 45px;
+  background: url("../images/icon/triangle.png") no-repeat 190px center #FFFFFF;
+  border-radius: 5px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.data-bag .get .degree .degree-replace .degree-options {
+  display: none;
+  list-style-type: none;
+  margin-top: 0;
+  position: absolute;
+  width: 220px;
+  border: 1px solid #f78b2b;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #FFF;
+}
+
+.data-bag .get .degree .degree-replace .degree-options li {
+  width: 218px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #FFF;
+}
+
+.data-bag .get .degree .degree-replace .degree-options li:hover {
+  background: #fde8d5;
 }
 
 .about-us {

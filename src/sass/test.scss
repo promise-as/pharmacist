@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  background: #cccccc;
+}
+
+#current {
+  width: 220px;
+  line-height: 45px;
+  background: url("../images/icon/triangle.png") no-repeat 190px center;
+  border-radius: 5px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#replace {
+  cursor: default;
+  overflow: visible;
+  position: relative;
+}
+
+#options li {
+  width: 218px;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#options {
+  display: none;
+  list-style-type: none;
+  margin-top: 0;
+  position: absolute;
+  width: 220px;
+  border: 1px solid #f78b2b;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#current, #options, #options li {
+  background-color: #FFF;
+}
+
+#options li:hover {
+  background: #fde8d5;
+}
+
+#select {
+  display: none;
+}

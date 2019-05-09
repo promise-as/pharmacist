@@ -6,8 +6,9 @@
   <!--<link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">-->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
+  <!--<link rel="stylesheet" href="css/test.css">-->
 
-  <!--<script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>-->
+  <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
 </head>
 <body>
 
@@ -267,7 +268,49 @@
     <div class="title"></div>
 
     <form class="get">
+      <!--类别-->
+      <div class="types">
+        <!--原本的select 隐藏-->
+        <select class="types-select">
+          <option>请选择您的类别</option>
+          <option value="types-1">执业西药师</option>
+          <option value="types-2">执业中药师</option>
+        </select>
+        <!--显示模拟的select-->
+        <div class="types-replace">
+          <!--提交的数据-->
+          <div class="current-type">请选择您的类别</div>
+          <ul class="types-options">
+            <li rel="types-1">执业西药师</li>
+            <li rel="types-2">执业中药师</li>
+          </ul>
+        </div>
+      </div>
 
+      <!--学历-->
+      <div class="degree">
+        <!--原本的select 隐藏-->
+        <select class="degree-select">
+          <option>请选择您的学历</option>
+          <option value="degree-1">中专</option>
+          <option value="degree-2">大专</option>
+          <option value="degree-3">本科</option>
+          <option value="degree-4">硕士</option>
+          <option value="degree-5">博士</option>
+        </select>
+        <!--显示模拟的select-->
+        <div class="degree-replace">
+          <!--提交的数据-->
+          <div class="current-degree">请选择您的学历</div>
+          <ul class="degree-options">
+            <li rel="types-1">中专</li>
+            <li rel="types-2">大专</li>
+            <li rel="types-3">本科</li>
+            <li rel="types-4">硕士</li>
+            <li rel="types-5">博士</li>
+          </ul>
+        </div>
+      </div>
     </form>
   </div>
 

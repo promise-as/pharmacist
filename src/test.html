@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>select test</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/test.css">
+
+</head>
+<body>
+
+<form>
+  <select id="select">
+    <option>请选择一项</option>
+    <option value="1">选项一</option>
+    <option value="2">选项二</option>
+    <option value="3">选项三</option>
+  </select>
+  <div id="replace">
+    <div id="current">请选择一项</div>
+    <ul id="options">
+      <li rel="1">选项一</li>
+      <li rel="2">选项二</li>
+      <li rel="3">选项三</li>
+    </ul>
+  </div>
+</form>
+
+</body>
+<script type="text/javascript">
+  function getEle(id) {
+    return document.getElementById(id);
+  }
+
+  window.onload = function () {
+    var lis = getEle("options").getElementsByTagName("li");
+    for (var i = 0, len = lis.length; i < len; i++) {
+      lis[i].onclick = function () {
+        getEle("select").value = this.getAttribute("rel");
+        getEle("options").style.display = "none";
+        getEle("current").innerHTML = this.innerHTML;
+      }
+    }
+    getEle("current").onclick = function () {
+      getEle("options").style.display = "block";
+    }
+  }
+</script>
+</html>
