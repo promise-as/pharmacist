@@ -6,22 +6,25 @@
   <!--<link rel="stylesheet" type="text/css" href="https://img.thea.cn/public/css/base.css">-->
   <link rel="stylesheet" href="css/base.css">
   <link rel="stylesheet" href="css/index.css">
-  <!--<link rel="stylesheet" href="css/test.css">-->
 
-  <script src="https://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+  <!--<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>-->
+  <script src="https://img.thea.cn/public/js/jquery-1.12.3.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js"></script>
 </head>
 <body>
 
 <div class="wrap">
-  <header class="header">
+  <div class="header">
     <div class="container clearfix">
-      <a href="index.html" class="logo"></a>
+      <a href="index.html" class="logo">
+        <!--<img src="images/logo/logo.png" alt="医学教育网">-->
+      </a>
       <a href="javascript:void (0)" class="advisory">
         <i class="icon"></i>
         <span>在线咨询</span>
       </a>
     </div>
-  </header>
+  </div>
 
   <div class="banner">
     <a href="javascript:void (0)" class="detail">
@@ -32,14 +35,14 @@
   <!--承诺-->
   <div class="promise clearfix">
     <div class="promise-item">
-      <i class="icon"></i>
+      <img src="images/icon/commitment1.png" alt="退款承诺" class="bg">
       <div class="text">
         <h2 class="item-h2">退款承诺</h2>
         <span>签订协议，2年不过退费</span>
       </div>
     </div>
     <div class="promise-item">
-      <i class="icon"></i>
+      <img src="images/icon/commitment2.png" alt="服务承诺" class="bg">
       <div class="text">
         <h2 class="item-h2">服务承诺</h2>
         <span>
@@ -48,7 +51,7 @@
       </div>
     </div>
     <div class="promise-item">
-      <i class="icon"></i>
+      <img src="images/icon/commitment3.png" alt="师资承诺" class="bg">
       <div class="text">
         <h2 class="item-h2">师资承诺</h2>
         <span>优质教学，一线名师授课</span>
@@ -66,6 +69,7 @@
       <div class="title"></div>
       <div class="stage clearfix">
         <div class="stage-item">
+          <img src="images/icon/stage_1.png" alt="基础学习" class="bg">
           <div class="text">
             <p>
               <!--<a href="#">基础学习阶段</a> &nbsp; <a href="#">零基础破冰</a>-->
@@ -80,7 +84,8 @@
           </div>
         </div>
         <div class="stage-item">
-          <div class="text">
+          <img src="images/icon/stage_2.png" alt="基础学习" class="bg">
+          <div class="text" style="text-align: center">
             <p>冲刺精讲阶段</p>
             <p>刷题直播阶段</p>
             <p>名师冲刺导学</p>
@@ -88,13 +93,15 @@
 
         </div>
         <div class="stage-item">
+          <img src="images/icon/stage_3.png" alt="基础学习" class="bg">
           <div class="text">
             <p>考前密训阶段 &nbsp; 围考试期应试</p>
             <p>实战模考阶段 &nbsp; 考前应试阶段</p>
           </div>
         </div>
         <div class="stage-item">
-          <div class="text">
+          <img src="images/icon/stage_4.png" alt="基础学习" class="bg">
+          <div class="text" style="margin-top: 134px">
             <p>配套课程讲义 &nbsp; 纸质辅导资料</p>
             <p>模考密卷（6套/科）</p>
             <p>名师考前押题试卷（1套/科）</p>
@@ -103,7 +110,11 @@
         </div>
       </div>
       <div class="btn">
-        <a href="javascript:void (0)" class="btn-item">下载资料</a>
+        <a href="javascript:void (0)" class="btn-item">
+          <img src="images/btn/btn2.png" alt="下载资料" class="bg">
+          <span>下载资料</span>
+
+        </a>
         <a href="javascript:void (0)" class="btn-item sel">体验课程</a>
       </div>
     </div>
@@ -200,6 +211,9 @@
           <span>阶段测试直播解读</span>
         </div>
       </div>
+    </div>
+    <div class="course">
+      <a href="javascript:void (0)" class="course-item">体验课程</a>
     </div>
   </div>
 
@@ -311,6 +325,30 @@
           </ul>
         </div>
       </div>
+
+      <input type="tel" class="" maxlength="11"
+             placeholder="请输入您的手机号">
+
+      <div class="picture-auth">
+        <input type="text" class=""
+               placeholder="请输入右侧验证码">
+        <img src="images/icon/picture_auth_code.png" 
+             class="img" alt="1074" >
+        <input type="button" class="refresh"
+           title="点击换一张验证码图片"
+        ></a>
+      </div>
+
+      <div class="msg-auth">
+        <input type="text" class=""
+               placeholder="请输入短信验证码">
+
+        <input type="button" class="get-msg-auth"
+        value="获取验证码">
+      </div>
+
+      <input type="button" class="submit"
+             value="提交领取备考资料">
     </form>
   </div>
 
@@ -349,6 +387,13 @@
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="footer">
+    Copyright © 2005 - 2019 www.med66.com All Rights Reserved.　北京东大正保科技有限公司 版权所有<br/>
+    设为首页－关于我们－董事长风采－欢迎合作－我要纠错－招聘信息－帮助中心－网站地图<br/>
+    24小时咨询电话：010-82311666 / 4006501888　传真：010-82330766　投诉电话：010-82330110　建议邮箱：medjy@cdeledu.com　客服邮箱：med66@cdeledu.com<br/>
+    京ICP证030467号 工商局红盾315备案号：010202007022800611 出版物经营许可证 京公网安备11010802020153 营业执照
   </div>
 </div>
 

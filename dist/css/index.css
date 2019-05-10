@@ -22,14 +22,15 @@ i {
 .header .logo {
   width: 198px;
   height: 52px;
-  background: url("../images/logo/logo.png") no-repeat;
+  background: url("../images/logo/logo.png") no-repeat center;
   float: left;
 }
 
 .header .advisory {
+  width: 160px;
+  height: 45px;
   float: right;
-  border: 1px solid #f45353;
-  border-radius: 10px;
+  background: url("../images/btn/wechat_bg.png") no-repeat center;
   padding: 0 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -56,31 +57,27 @@ i {
 }
 
 .banner .detail {
+  width: 264px;
   text-align: center;
   font-size: 24px;
   line-height: 56px;
   border-radius: 28px;
-  background-image: -webkit-gradient(linear, left top, right top, from(#f6765f), to(#f59b61));
-  background-image: linear-gradient(to right, #f6765f, #f59b61);
+  background: url("../images/btn/btn1.png") no-repeat center;
   padding: 0 82px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #FFFFFF;
   position: absolute;
   top: 426px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-
-.banner .detail:hover {
-  background: #f6765f;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 /*承诺*/
 .promise {
-  width: 1006px;
-  height: 192px;
+  width: 1016px;
+  height: 196px;
   background: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
@@ -90,19 +87,16 @@ i {
 }
 
 .promise .promise-item {
-  margin: 0 50px;
+  margin: 0 58px;
   display: inline-block;
-  padding: 38px 0;
+  padding: 36px 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 
-.promise .promise-item .icon {
-  width: 57px;
-  height: 52px;
-  background: url("../images/icon/commitment1.png") no-repeat;
+.promise .promise-item .bg {
   float: left;
-  margin-right: 18px;
+  margin-right: 16px;
 }
 
 .promise .promise-item .text {
@@ -113,25 +107,19 @@ i {
   font-size: 20px;
   font-weight: bold;
   color: #5859e9;
+  line-height: 24px;
 }
 
 .promise .promise-item .text span {
   font-size: 14px;
   color: #333333;
-}
-
-.promise .promise-item:nth-of-type(2) .icon {
-  background: url("../images/icon/commitment2.png") no-repeat;
-}
-
-.promise .promise-item:nth-of-type(3) .icon {
-  background: url("../images/icon/commitment3.png") no-repeat;
+  line-height: 36px;
 }
 
 .promise .hint {
   font-size: 16px;
   text-align: center;
-  line-height: 60px;
+  line-height: 58px;
   color: #FFFFFF;
 }
 
@@ -160,9 +148,17 @@ i {
           box-sizing: border-box;
   margin-right: 14px;
   float: left;
+  position: relative;
+}
+
+.exam .stage .stage-item .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .exam .stage .stage-item .text {
+  width: 100%;
   font-size: 14px;
   color: #333333;
   padding: 20px 54px;
@@ -171,42 +167,13 @@ i {
   margin-top: 160px;
   line-height: 30px;
   text-align: left;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .exam .stage .stage-item .text p a {
   float: left;
-}
-
-.exam .stage .stage-item .text p a:first-child {
-  margin-right: 16px;
-}
-
-.exam .stage .stage-item:first-child {
-  background: url("../images/icon/stage_1.png") no-repeat center;
-}
-
-.exam .stage .stage-item:nth-of-type(2) {
-  background: url("../images/icon/stage_2.png") no-repeat center;
-}
-
-.exam .stage .stage-item:nth-of-type(2) .text {
-  text-align: center;
-}
-
-.exam .stage .stage-item:nth-of-type(3) {
-  background: url("../images/icon/stage_3.png") no-repeat center;
-}
-
-.exam .stage .stage-item:nth-of-type(4) {
-  background: url("../images/icon/stage_4.png") no-repeat center;
-}
-
-.exam .stage .stage-item:nth-of-type(4) .text {
-  margin-top: 137px;
-}
-
-.exam .stage .stage-item:last-child {
-  margin-right: 0;
 }
 
 .exam .btn {
@@ -219,13 +186,13 @@ i {
   line-height: 52px;
   display: inline-block;
   color: #f49d36;
-  border: 1px solid #f49d36;
-  border-radius: 46px;
+  position: relative;
 }
 
-.exam .btn .btn-item:hover, .exam .btn .btn-item.sel {
-  background: #f49d36;
-  color: #FFFFFF;
+.exam .btn .btn-item .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .exam .btn .btn-item:first-child {
@@ -272,7 +239,7 @@ i {
   font-size: 22px;
   color: #FFFFFF;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .vip .content .cont-left .left-head .icon {
@@ -353,6 +320,26 @@ i {
 .vip .content .cont-right .right-item span {
   float: left;
   line-height: 22px;
+}
+
+.vip .course {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.vip .course .course-item {
+  padding: 0 100px;
+  line-height: 52px;
+  display: inline-block;
+  color: #f49d36;
+  border: 1px solid #f49d36;
+  border-radius: 46px;
+}
+
+.vip .course .course-item:hover, .vip .course .course-item.sel {
+  background: #f49d36;
+  color: #FFFFFF;
 }
 
 /*9大社群服务 为您保驾护航*/
@@ -503,20 +490,20 @@ i {
 
 .data-bag .get {
   width: 620px;
-  height: 380px;
   background: url("../images/bg/bg5.png") no-repeat center;
   margin-left: auto;
   margin-right: auto;
-  padding: 40px 72px;
+  padding: 30px 72px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #000;
   color: #888888;
   font-size: 14px;
+  text-align: center;
 }
 
 .data-bag .get .types {
   float: left;
+  text-align: left;
 }
 
 .data-bag .get .types .types-select {
@@ -551,6 +538,7 @@ i {
           box-sizing: border-box;
   border-radius: 5px;
   background-color: #FFF;
+  z-index: 10;
 }
 
 .data-bag .get .types .types-replace .types-options li {
@@ -569,6 +557,7 @@ i {
 
 .data-bag .get .degree {
   float: right;
+  text-align: left;
 }
 
 .data-bag .get .degree .degree-select {
@@ -603,6 +592,7 @@ i {
           box-sizing: border-box;
   border-radius: 5px;
   background-color: #FFF;
+  z-index: 10;
 }
 
 .data-bag .get .degree .degree-replace .degree-options li {
@@ -617,6 +607,100 @@ i {
 
 .data-bag .get .degree .degree-replace .degree-options li:hover {
   background: #fde8d5;
+}
+
+.data-bag .get input {
+  border: none;
+  width: 100%;
+  padding: 0 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.data-bag .get input::-webkit-input-placeholder {
+  color: #888888;
+}
+
+.data-bag .get input::-moz-placeholder {
+  color: #888888;
+}
+
+.data-bag .get input:-ms-input-placeholder {
+  color: #888888;
+}
+
+.data-bag .get input::-ms-input-placeholder {
+  color: #888888;
+}
+
+.data-bag .get input::placeholder {
+  color: #888888;
+}
+
+.data-bag .get input:-ms-input-placeholder {
+  color: #888888 !important;
+}
+
+.data-bag .get .picture-auth {
+  position: relative;
+}
+
+.data-bag .get .picture-auth .img {
+  position: absolute;
+  top: 31px;
+  right: 58px;
+}
+
+.data-bag .get .picture-auth .refresh {
+  padding: 0;
+  margin-top: 0;
+  width: 24px;
+  height: 22px;
+  background: url("../images/icon/refresh.png") no-repeat center;
+  position: absolute;
+  top: 31px;
+  right: 18px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  cursor: pointer;
+}
+
+.data-bag .get .msg-auth {
+  position: relative;
+}
+
+.data-bag .get .msg-auth .get-msg-auth {
+  width: 25%;
+  font-size: 14px;
+  color: #f78b2b;
+  position: absolute;
+  top: 20px;
+  right: 4px;
+  cursor: pointer;
+  line-height: 45px;
+  background: #FFFFFF;
+  margin-top: 0;
+  padding: 0;
+}
+
+.data-bag .get .submit {
+  width: 60%;
+  color: #FFFFFF;
+  background: #f78b2b;
+  border-radius: 26px;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: "Microsoft YaHei";
+}
+
+.data-bag .get .submit:hover {
+  background: #F78410;
 }
 
 .about-us {
@@ -700,4 +784,14 @@ i {
 
 .about-us .QR-code .code-item:nth-of-type(2) .icon {
   background: url("../images/icon/app.png") no-repeat center;
+}
+
+.footer {
+  font-size: 14px;
+  color: #888888;
+  text-align: center;
+  line-height: 30px;
+  padding: 24px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }

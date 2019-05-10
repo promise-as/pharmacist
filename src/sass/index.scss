@@ -21,13 +21,16 @@ i{
   .logo {
     width: 198px;
     height: 52px;
-    background: url("../images/logo/logo.png") no-repeat;
+    background: url("../images/logo/logo.png") no-repeat center;
     float: left;
   }
   .advisory {
+    width: 160px;
+    height: 45px;
     float: right;
-    border: 1px solid #f45353;
-    border-radius: 10px;
+    //border: 1px solid #f45353;
+    background: url("../images/btn/wechat_bg.png") no-repeat center;
+    //border-radius: 10px;
     padding: 0 24px;
     box-sizing: border-box;
     .icon {
@@ -49,51 +52,43 @@ i{
   width: 100%;
   height: 500px;
   background: url("../images/bg/banner.png") no-repeat center;
-  //position: relative;
   .detail {
+    width: 264px;
     text-align: center;
     font-size: 24px;
     line-height: 56px;
     border-radius: 28px;
-    background-image: linear-gradient(to right, #f6765f, #f59b61);
+    background: url("../images/btn/btn1.png") no-repeat center;
     padding: 0 82px;
     box-sizing: border-box;
     color: #FFFFFF;
     position: absolute;
     top: 426px;
-    left: 50%;
-    transform: translateX(-50%);
-    &:hover{
-      background: #f6765f;
-    }
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 
 /*承诺*/
 .promise {
-  width: 1006px;
-  height: 192px;
+  width: 1016px;
+  height: 196px;
   background: #FFFFFF;
   margin-left: auto;
   margin-right: auto;
   margin-top: -68px;
   border-radius: 10px;
-  //padding: 40px 0;
-  //box-sizing: border-box;
   background: url("../images/icon/promise.png") no-repeat center;
   .promise-item {
-    margin: 0 50px;
+    margin: 0 58px;
     //border: 1px solid #000;
-    //height: 130px;
     display: inline-block;
-    padding: 38px 0;
+    padding: 36px 0;
     box-sizing: border-box;
-    .icon {
-      width: 57px;
-      height: 52px;
-      background: url("../images/icon/commitment1.png") no-repeat;
+    .bg{
       float: left;
-      margin-right: 18px;
+      margin-right: 16px;
     }
     .text {
       float: right;
@@ -101,28 +96,19 @@ i{
         font-size: 20px;
         font-weight: bold;
         color: #5859e9;
+        line-height: 24px;
       }
       span {
         font-size: 14px;
         color: #333333;
-      }
-    }
-    &:nth-of-type(2){
-      //margin: 0 60px;
-      .icon{
-        background: url("../images/icon/commitment2.png") no-repeat;
-      }
-    }
-    &:nth-of-type(3){
-      .icon{
-        background: url("../images/icon/commitment3.png") no-repeat;
+        line-height: 36px;
       }
     }
   }
   .hint{
     font-size: 16px;
     text-align: center;
-    line-height: 60px;
+    line-height: 58px;
     color: #FFFFFF;
   }
 }
@@ -145,12 +131,18 @@ i{
       //border: 1px solid #000;
       width: 296px;
       height: 320px;
-      //display: inline-block;
       text-align: center;
       box-sizing: border-box;
       margin-right: 14px;
       float: left;
+      position: relative;
+      .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
       .text{
+        width: 100%;
         //border: 1px solid #000;
         font-size: 14px;
         color: #333333;
@@ -159,37 +151,15 @@ i{
         margin-top: 160px;
         line-height: 30px;
         text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
         p{
           a{
             float: left;
-            &:first-child{
-              margin-right: 16px;
-            }
           }
         }
       }
-      &:first-child{
-        background: url("../images/icon/stage_1.png") no-repeat center;
-      }
-      &:nth-of-type(2){
-        background: url("../images/icon/stage_2.png") no-repeat center;
-        .text{
-          text-align: center;
-        }
-      }
-      &:nth-of-type(3){
-        background: url("../images/icon/stage_3.png") no-repeat center;
-      }
-      &:nth-of-type(4){
-        background: url("../images/icon/stage_4.png") no-repeat center;
-        .text{
-          margin-top: 137px;
-        }
-      }
-      &:last-child{
-        margin-right: 0;
-      }
-
     }
   }
   .btn{
@@ -201,11 +171,16 @@ i{
       line-height: 52px;
       display: inline-block;
       color: #f49d36;
-      border: 1px solid #f49d36;
-      border-radius: 46px;
+      //border: 1px solid #f49d36;
+      //border-radius: 46px;
+      position: relative;
+      .bg{
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
       &:hover, &.sel{
-        background: #f49d36;
-        color: #FFFFFF;
+        //color: #FFFFFF;
       }
       &:first-child{
         margin-right: 30px;
@@ -247,7 +222,7 @@ i{
         color: #FFFFFF;
         //text-align: center;
         font-weight: bold;
-        margin-bottom: 12px;
+        margin-bottom: 20px;
         .icon{
           width: 76px;
           height: 48px;
@@ -320,6 +295,24 @@ i{
           float: left;
           line-height: 22px;
         }
+      }
+    }
+  }
+  .course{
+    //border: 1px solid #cccccc;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    .course-item{
+      padding: 0 100px;
+      line-height: 52px;
+      display: inline-block;
+      color: #f49d36;
+      border: 1px solid #f49d36;
+      border-radius: 46px;
+      &:hover, &.sel{
+        background: #f49d36;
+        color: #FFFFFF;
       }
     }
   }
@@ -479,17 +472,19 @@ i{
   }
   .get{
     width: 620px;
-    height: 380px;
+    //height: 380px;
     background: url("../images/bg/bg5.png") no-repeat center;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 72px;
+    padding: 30px 72px;
     box-sizing: border-box;
-    border: 1px solid #000;
+    //border: 1px solid #000;
     color: #888888;
     font-size: 14px;
+    text-align: center;
     .types{
       float: left;
+      text-align: left;
       .types-select {
         display: none;
       }
@@ -516,6 +511,7 @@ i{
           box-sizing: border-box;
           border-radius: 5px;
           background-color: #FFF;
+          z-index: 10;
           li {
             width: 218px;
             line-height: 30px;
@@ -532,6 +528,7 @@ i{
     }
     .degree{
       float: right;
+      text-align: left;
       .degree-select {
         display: none;
       }
@@ -558,6 +555,7 @@ i{
           box-sizing: border-box;
           border-radius: 5px;
           background-color: #FFF;
+          z-index: 10;
           li {
             width: 218px;
             line-height: 30px;
@@ -570,6 +568,75 @@ i{
             }
           }
         }
+      }
+    }
+
+    input{
+      border: none;
+      width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      height: 45px;
+      line-height: 45px;
+      border-radius: 5px;
+      margin-top: 20px;
+      &::placeholder{
+        color: #888888;
+      }
+    }
+    input:-ms-input-placeholder {
+      color:#888888 !important;
+    }
+    .picture-auth{
+      //border: 1px solid #000;
+      position: relative;
+      .img{
+        position: absolute;
+        top: 31px;
+        right: 58px;
+      }
+      .refresh{
+        //border: 1px solid #000;
+        padding: 0;
+        margin-top: 0;
+        width: 24px;
+        height: 22px;
+        background: url("../images/icon/refresh.png") no-repeat center;
+        position: absolute;
+        top: 31px;
+        right: 18px;
+        transition: transform 0.5s; //过度时间 可调
+        cursor: pointer;
+      }
+    }
+    .msg-auth{
+      //border: 1px solid #cccccc;
+      position: relative;
+      .get-msg-auth{
+        width: 25%;
+        font-size: 14px;
+        color: #f78b2b;
+        //border: 1px solid #000;
+        position: absolute;
+        top: 20px;
+        right: 4px;
+        cursor: pointer;
+        line-height: 45px;
+        background: #FFFFFF;
+        margin-top: 0;
+        padding: 0;
+      }
+    }
+    .submit{
+      width: 60%;
+      color: #FFFFFF;
+      background: #f78b2b;
+      border-radius: 26px;
+      cursor: pointer;
+      font-size: 18px;
+      font-family:"Microsoft YaHei";
+      &:hover{
+        background: #F78410;
       }
     }
   }
@@ -654,4 +721,13 @@ i{
       }
     }
   }
+}
+
+.footer{
+  font-size: 14px;
+  color: #888888;
+  text-align: center;
+  line-height: 30px;
+  padding: 24px 0;
+  box-sizing: border-box;
 }

@@ -2,48 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>select test</title>
-  <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/test.css">
+  <title>js 倒计时</title>
 
+  <style>
+    .disabled {
+      background: #fff;
+      color: #ccc;
+      border: solid 0px;
+    }
+    .disabled:hover {
+      background:none;
+      color: #ccc;
+    }
+  </style>
+
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js">
+  </script>
+  <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.js">
+  </script>
+  <script src="js/index.js"></script>
 </head>
 <body>
 
-<form>
-  <select id="select">
-    <option>请选择一项</option>
-    <option value="1">选项一</option>
-    <option value="2">选项二</option>
-    <option value="3">选项三</option>
-  </select>
-  <div id="replace">
-    <div id="current">请选择一项</div>
-    <ul id="options">
-      <li rel="1">选项一</li>
-      <li rel="2">选项二</li>
-      <li rel="3">选项三</li>
-    </ul>
-  </div>
-</form>
+<input type="tel" placeholder="请输入手机号"
+       name="Phone">
+
+<a class="fasong" id="btnSend"
+   style="cursor:pointer;">发送验证码</a>
 
 </body>
-<script type="text/javascript">
-  function getEle(id) {
-    return document.getElementById(id);
-  }
-
-  window.onload = function () {
-    var lis = getEle("options").getElementsByTagName("li");
-    for (var i = 0, len = lis.length; i < len; i++) {
-      lis[i].onclick = function () {
-        getEle("select").value = this.getAttribute("rel");
-        getEle("options").style.display = "none";
-        getEle("current").innerHTML = this.innerHTML;
-      }
-    }
-    getEle("current").onclick = function () {
-      getEle("options").style.display = "block";
-    }
-  }
-</script>
 </html>
