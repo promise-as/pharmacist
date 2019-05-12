@@ -8,7 +8,8 @@
 a, i {
   display: block;
 }
-i{
+
+i {
   font-style: normal;
 }
 
@@ -86,7 +87,7 @@ i{
     display: inline-block;
     padding: 36px 0;
     box-sizing: border-box;
-    .bg{
+    .bg {
       float: left;
       margin-right: 16px;
     }
@@ -105,7 +106,7 @@ i{
       }
     }
   }
-  .hint{
+  .hint {
     font-size: 16px;
     text-align: center;
     line-height: 58px;
@@ -114,20 +115,20 @@ i{
 }
 
 /*考试*/
-.exam{
+.exam {
   //border: 1px solid #000;
   margin-top: 48px;
   padding-bottom: 60px;
   background: url("../images/bg/bg1.png") no-repeat center;
-  .title{
+  .title {
     width: 100%;
     height: 95px;
     background: url("../images/icon/title_1.png") no-repeat center;
   }
-  .stage{
+  .stage {
     //border: 1px solid #cccccc;
     margin: 46px -20px;
-    .stage-item{
+    .stage-item {
       //border: 1px solid #000;
       width: 296px;
       height: 320px;
@@ -136,12 +137,12 @@ i{
       margin-right: 14px;
       float: left;
       position: relative;
-      .bg{
+      .bg {
         position: absolute;
         top: 0;
         left: 0;
       }
-      .text{
+      .text {
         width: 100%;
         //border: 1px solid #000;
         font-size: 14px;
@@ -154,55 +155,50 @@ i{
         position: absolute;
         top: 0;
         left: 0;
-        p{
-          a{
+        p {
+          a {
             float: left;
           }
         }
       }
     }
   }
-  .btn{
+  .btn {
     //border: 1px solid #cccccc;
     text-align: center;
     font-size: 18px;
-    .btn-item{
+    .btn-item {
       padding: 0 62px;
       line-height: 52px;
       display: inline-block;
       color: #f49d36;
-      //border: 1px solid #f49d36;
-      //border-radius: 46px;
       position: relative;
-      .bg{
+      .bg {
         position: absolute;
         top: 0;
         left: 0;
       }
-      &:hover, &.sel{
-        //color: #FFFFFF;
-      }
-      &:first-child{
-        margin-right: 30px;
-      }
+    }
+    .sel {
+      margin-left: 30px;
     }
   }
 }
 
 /*vip*/
-.vip{
+.vip {
   width: 100%;
   height: 610px;
   background: url("../images/bg/bg2.png") no-repeat center;
   padding-top: 25px;
   box-sizing: border-box;
-  .title{
+  .title {
     //border: 1px solid #000;
     width: 100%;
     height: 94px;
     background: url("../images/icon/title_2.png") no-repeat center;
   }
-  .content{
+  .content {
     width: 1240px;
     height: 336px;
     margin-left: auto;
@@ -210,20 +206,20 @@ i{
     background: url("../images/bg/bg3.png") no-repeat center;
     padding: 37px 20px;
     box-sizing: border-box;
-    .cont-left{
+    .cont-left {
       width: 300px;
       height: 240px;
       //border: 1px solid #000;
       padding: 28px 36px;
       box-sizing: border-box;
       float: left;
-      .left-head{
+      .left-head {
         font-size: 22px;
         color: #FFFFFF;
         //text-align: center;
         font-weight: bold;
         margin-bottom: 20px;
-        .icon{
+        .icon {
           width: 76px;
           height: 48px;
           background: url("../images/icon/square1.png") no-repeat center;
@@ -232,25 +228,29 @@ i{
 
           float: left;
         }
-        span{
+        span {
           float: left;
           font-size: 24px;
-          strong{
+          strong {
 
             font-size: 30px;
           }
         }
       }
-      .btn{
+      .btn {
+        width: 200px;
+        height: 46px;
         padding: 0 24px;
+        box-sizing: border-box;
         line-height: 46px;
         font-size: 22px;
         font-weight: bold;
         color: #FFFFFF;
-        border-radius: 23px;
-        background: #797aed;
         margin-bottom: 10px;
-        .icon{
+        border: 1px solid #000;
+        margin-left: auto;
+        margin-right: auto;
+        .icon {
           width: 12px;
           height: 12px;
           background: url("../images/icon/circle.png") no-repeat center;
@@ -258,16 +258,16 @@ i{
           margin-top: 16px;
           margin-right: 6px;
         }
-        span{
+        span {
           float: left;
           font-weight: bold;
         }
-        &:hover{
+        &:hover {
           color: #5859e9;
         }
       }
     }
-    .cont-right{
+    .cont-right {
       width: 898px;
       height: 240px;
       //border: 1px solid #cccccc;
@@ -275,7 +275,7 @@ i{
       padding-top: 32px;
       padding-left: 38px;
       box-sizing: border-box;
-      .right-item{
+      .right-item {
         color: #333333;
         font-size: 16px;
         //border: 1px solid #000;
@@ -284,193 +284,142 @@ i{
 
         box-sizing: border-box;
         margin-bottom: 28px;
-        .icon{
+        .icon {
           width: 22px;
           height: 22px;
           background: url("../images/icon/circle_sel.png") no-repeat center;
           float: left;
           margin-right: 10px;
         }
-        span{
+        span {
           float: left;
           line-height: 22px;
         }
       }
     }
   }
-  .course{
+  .course {
     //border: 1px solid #cccccc;
     text-align: center;
     font-size: 18px;
     margin-top: 30px;
-    .course-item{
+    .course-item {
       padding: 0 100px;
       line-height: 52px;
       display: inline-block;
       color: #f49d36;
-      border: 1px solid #f49d36;
-      border-radius: 46px;
-      &:hover, &.sel{
-        background: #f49d36;
-        color: #FFFFFF;
-      }
+      position: relative;
+    }
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 }
 
 /*9大社群服务 为您保驾护航*/
-.serve{
+.serve {
   height: 685px;
   padding-top: 25px;
   padding-bottom: 50px;
   box-sizing: border-box;
-  .title{
+  .title {
     //border: 1px solid #000;
     width: 100%;
     height: 94px;
     background: url("../images/icon/title_3.png") no-repeat center;
     margin-bottom: 25px;
   }
-  .serve-content{
+  .serve-content {
     //border: 1px solid #000;
-    .serve-item{
+    margin-right: -38px;
+    .item{
       width: 209px;
       height: 208px;
-      border: 1px solid #dddddd;
-      padding: 32px 2px;
-      box-sizing: border-box;
-      border-radius: 16px;
+      text-indent: -9999px;
       float: left;
       margin-right: 38px;
-      margin-bottom: 30px;
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      color: #333333;
-      line-height: 50px;
-      .icon{
-        width: 100%;
-        height: 96px;
-        background: url("../images/icon/serve1_nor.png") no-repeat center;
-      }
-      .more{
-        font-size: 30px;
-        color: #5859e9;
-        padding-top: 21px;
-        box-sizing: border-box;
-      }
-      &:nth-of-type(2){
-        .icon{
-          background: url("../images/icon/serve2_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve2_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(3){
-        .icon{
-          background: url("../images/icon/serve3_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve3_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(4){
-        .icon{
-          background: url("../images/icon/serve4_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve4_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(5){
-        .icon{
-          background: url("../images/icon/serve5_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve5_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(6){
-        .icon{
-          background: url("../images/icon/serve6_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve6_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(7){
-        .icon{
-          background: url("../images/icon/serve7_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve7_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(8){
-        .icon{
-          background: url("../images/icon/serve8_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve8_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(9){
-        .icon{
-          background: url("../images/icon/serve9_nor.png") no-repeat center;
-        }
-        &:hover{
-          .icon{
-            background: url("../images/icon/serve9_sel.png") no-repeat center;
-          }
-        }
-      }
-      &:nth-of-type(5n + 5){
-        margin-right: 0;
-      }
+      margin-bottom: 38px;
+    }
+    .serve1 {
+      background: url("../images/icon/serve1_nor.png") no-repeat center;
       &:hover{
-        background: #5859e9;
-        color: #FFFFFF;
-        .icon{
-          background: url("../images/icon/serve1_sel.png") no-repeat center;
-        }
-        .more{
-          color: #FFFFFF;
-        }
+        background: url("../images/icon/serve1_sel.png") no-repeat center;
+      }
+    }
+    .serve2 {
+      background: url("../images/icon/serve2_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve2_sel.png") no-repeat center;
+      }
+    }
+    .serve3 {
+      background: url("../images/icon/serve3_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve3_sel.png") no-repeat center;
+      }
+    }
+    .serve4 {
+      background: url("../images/icon/serve4_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve4_sel.png") no-repeat center;
+      }
+    }
+    .serve5 {
+      background: url("../images/icon/serve5_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve5_sel.png") no-repeat center;
+      }
+    }
+    .serve6 {
+      background: url("../images/icon/serve6_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve6_sel.png") no-repeat center;
+      }
+    }
+    .serve7 {
+      background: url("../images/icon/serve7_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve7_sel.png") no-repeat center;
+      }
+    }
+    .serve8 {
+      background: url("../images/icon/serve8_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve8_sel.png") no-repeat center;
+      }
+    }
+    .serve9 {
+      background: url("../images/icon/serve9_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve9_sel.png") no-repeat center;
+      }
+    }
+    .serve10 {
+      background: url("../images/icon/serve10_nor.png") no-repeat center;
+      &:hover{
+        background: url("../images/icon/serve10_sel.png") no-repeat center;
       }
     }
   }
 }
 
 /*0元领取精华备考资料包*/
-.data-bag{
+.data-bag {
   width: 100%;
   height: 620px;
   background: url("../images/bg/bg4.png") no-repeat center;
   padding-top: 25px;
   box-sizing: border-box;
-  .title{
+  .title {
     //border: 1px solid #000;
     width: 100%;
     height: 94px;
     background: url("../images/icon/title_4.png") no-repeat center;
     margin-bottom: 25px;
   }
-  .get{
+  .get {
     width: 620px;
     //height: 380px;
     background: url("../images/bg/bg5.png") no-repeat center;
@@ -482,7 +431,7 @@ i{
     color: #888888;
     font-size: 14px;
     text-align: center;
-    .types{
+    .types {
       float: left;
       text-align: left;
       .types-select {
@@ -526,7 +475,7 @@ i{
         }
       }
     }
-    .degree{
+    .degree {
       float: right;
       text-align: left;
       .degree-select {
@@ -571,7 +520,7 @@ i{
       }
     }
 
-    input{
+    input {
       border: none;
       width: 100%;
       padding: 0 20px;
@@ -580,22 +529,23 @@ i{
       line-height: 45px;
       border-radius: 5px;
       margin-top: 20px;
-      &::placeholder{
+      color: #888888;
+      &::placeholder {
         color: #888888;
       }
     }
     input:-ms-input-placeholder {
-      color:#888888 !important;
+      color: #888888 !important;
     }
-    .picture-auth{
+    .picture-auth {
       //border: 1px solid #000;
       position: relative;
-      .img{
+      .img {
         position: absolute;
         top: 31px;
         right: 58px;
       }
-      .refresh{
+      .refresh {
         //border: 1px solid #000;
         padding: 0;
         margin-top: 0;
@@ -609,10 +559,10 @@ i{
         cursor: pointer;
       }
     }
-    .msg-auth{
+    .msg-auth {
       //border: 1px solid #cccccc;
       position: relative;
-      .get-msg-auth{
+      .get-msg-auth {
         width: 25%;
         font-size: 14px;
         color: #f78b2b;
@@ -627,27 +577,31 @@ i{
         padding: 0;
       }
     }
-    .submit{
+    .submit {
       width: 60%;
+      height: 52px;
+      line-height: 52px;
       color: #FFFFFF;
-      background: #f78b2b;
-      border-radius: 26px;
+      //background: #f78b2b;
+      //border-radius: 26px;
       cursor: pointer;
       font-size: 18px;
-      font-family:"Microsoft YaHei";
-      &:hover{
-        background: #F78410;
+      font-family: "Microsoft YaHei";
+      text-indent: -9999px;
+      background: url("../images/btn/btn5.png") no-repeat center;
+      &:hover {
+        //background: #F78410;
       }
     }
   }
 }
 
-.about-us{
+.about-us {
   width: 100%;
   height: 400px;
   background: url("../images/bg/bg6.png") no-repeat center;
   color: #FFFFFF;
-  .us-content{
+  .us-content {
     width: 55%;
     height: 400px;
     //border: 1px solid #cccccc;
@@ -655,45 +609,45 @@ i{
     box-sizing: border-box;
     float: left;
 
-    .us-h2{
+    .us-h2 {
       font-size: 34px;
       font-weight: bold;
       line-height: 40px;
       //border: 1px solid #000;
       margin-bottom: 20px;
     }
-    .detail{
+    .detail {
       font-size: 16px;
       line-height: 30px;
       //border: 1px solid red;
       margin-bottom: 30px;
     }
-    .phone{
+    .phone {
       font-size: 24px;
       font-weight: bold;
       //border: 1px solid yellow;
       margin-bottom: 20px;
-      .icon{
+      .icon {
         width: 60px;
         height: 64px;
         background: url("../images/icon/tel.png") no-repeat center;
         float: left;
         margin-top: 14px;
       }
-      .hot-line{
-        strong{
+      .hot-line {
+        strong {
           font-size: 36px;
           font-style: italic;
           padding-right: 4px;
         }
       }
     }
-    .address{
+    .address {
       font-size: 16px;
     }
   }
 
-  .QR-code{
+  .QR-code {
     width: 45%;
     height: 400px;
     //border: 1px solid #000;
@@ -701,21 +655,21 @@ i{
     box-sizing: border-box;
     float: right;
     font-size: 16px;
-    .code-item{
+    .code-item {
       //border: 1px solid #000;
       padding: 25px;
       box-sizing: border-box;
       float: left;
       line-height: 30px;
-      .icon{
+      .icon {
         width: 108px;
         height: 108px;
         background: url("../images/icon/accounts.png") no-repeat center;
         margin-left: auto;
         margin-right: auto;
       }
-      &:nth-of-type(2){
-        .icon{
+      &:nth-of-type(2) {
+        .icon {
           background: url("../images/icon/app.png") no-repeat center;
         }
       }
@@ -723,7 +677,7 @@ i{
   }
 }
 
-.footer{
+.footer {
   font-size: 14px;
   color: #888888;
   text-align: center;

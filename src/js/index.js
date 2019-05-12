@@ -20,6 +20,7 @@ $(function () {
       });
     });
   }
+
   // 类别
   optimizeSelect($(".current-type"), $(".types-options"), $(".types-select"));
   // 学历
@@ -87,4 +88,6 @@ $(function () {
       LockButton('.get-msg-auth', remainTime); // remainTime: 剩余时间
     }
   }
+
+  $('input').placeholder({});
 });

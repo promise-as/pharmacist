@@ -195,8 +195,8 @@ i {
   left: 0;
 }
 
-.exam .btn .btn-item:first-child {
-  margin-right: 30px;
+.exam .btn .sel {
+  margin-left: 30px;
 }
 
 /*vip*/
@@ -261,14 +261,19 @@ i {
 }
 
 .vip .content .cont-left .btn {
+  width: 200px;
+  height: 46px;
   padding: 0 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   line-height: 46px;
   font-size: 22px;
   font-weight: bold;
   color: #FFFFFF;
-  border-radius: 23px;
-  background: #797aed;
   margin-bottom: 10px;
+  border: 1px solid #000;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .vip .content .cont-left .btn .icon {
@@ -333,13 +338,13 @@ i {
   line-height: 52px;
   display: inline-block;
   color: #f49d36;
-  border: 1px solid #f49d36;
-  border-radius: 46px;
+  position: relative;
 }
 
-.vip .course .course-item:hover, .vip .course .course-item.sel {
-  background: #f49d36;
-  color: #FFFFFF;
+.vip .course .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*9大社群服务 为您保驾护航*/
@@ -358,117 +363,97 @@ i {
   margin-bottom: 25px;
 }
 
-.serve .serve-content .serve-item {
-  width: 209px;
-  height: 208px;
-  border: 1px solid #dddddd;
-  padding: 32px 2px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 16px;
-  float: left;
-  margin-right: 38px;
-  margin-bottom: 30px;
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  color: #333333;
-  line-height: 50px;
+.serve .serve-content {
+  margin-right: -38px;
 }
 
-.serve .serve-content .serve-item .icon {
-  width: 100%;
-  height: 96px;
+.serve .serve-content .item {
+  width: 209px;
+  height: 208px;
+  text-indent: -9999px;
+  float: left;
+  margin-right: 38px;
+  margin-bottom: 38px;
+}
+
+.serve .serve-content .serve1 {
   background: url("../images/icon/serve1_nor.png") no-repeat center;
 }
 
-.serve .serve-content .serve-item .more {
-  font-size: 30px;
-  color: #5859e9;
-  padding-top: 21px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-.serve .serve-content .serve-item:nth-of-type(2) .icon {
-  background: url("../images/icon/serve2_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(2):hover .icon {
-  background: url("../images/icon/serve2_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(3) .icon {
-  background: url("../images/icon/serve3_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(3):hover .icon {
-  background: url("../images/icon/serve3_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(4) .icon {
-  background: url("../images/icon/serve4_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(4):hover .icon {
-  background: url("../images/icon/serve4_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(5) .icon {
-  background: url("../images/icon/serve5_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(5):hover .icon {
-  background: url("../images/icon/serve5_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(6) .icon {
-  background: url("../images/icon/serve6_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(6):hover .icon {
-  background: url("../images/icon/serve6_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(7) .icon {
-  background: url("../images/icon/serve7_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(7):hover .icon {
-  background: url("../images/icon/serve7_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(8) .icon {
-  background: url("../images/icon/serve8_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(8):hover .icon {
-  background: url("../images/icon/serve8_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(9) .icon {
-  background: url("../images/icon/serve9_nor.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(9):hover .icon {
-  background: url("../images/icon/serve9_sel.png") no-repeat center;
-}
-
-.serve .serve-content .serve-item:nth-of-type(5n + 5) {
-  margin-right: 0;
-}
-
-.serve .serve-content .serve-item:hover {
-  background: #5859e9;
-  color: #FFFFFF;
-}
-
-.serve .serve-content .serve-item:hover .icon {
+.serve .serve-content .serve1:hover {
   background: url("../images/icon/serve1_sel.png") no-repeat center;
 }
 
-.serve .serve-content .serve-item:hover .more {
-  color: #FFFFFF;
+.serve .serve-content .serve2 {
+  background: url("../images/icon/serve2_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve2:hover {
+  background: url("../images/icon/serve2_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve3 {
+  background: url("../images/icon/serve3_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve3:hover {
+  background: url("../images/icon/serve3_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve4 {
+  background: url("../images/icon/serve4_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve4:hover {
+  background: url("../images/icon/serve4_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve5 {
+  background: url("../images/icon/serve5_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve5:hover {
+  background: url("../images/icon/serve5_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve6 {
+  background: url("../images/icon/serve6_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve6:hover {
+  background: url("../images/icon/serve6_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve7 {
+  background: url("../images/icon/serve7_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve7:hover {
+  background: url("../images/icon/serve7_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve8 {
+  background: url("../images/icon/serve8_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve8:hover {
+  background: url("../images/icon/serve8_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve9 {
+  background: url("../images/icon/serve9_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve9:hover {
+  background: url("../images/icon/serve9_sel.png") no-repeat center;
+}
+
+.serve .serve-content .serve10 {
+  background: url("../images/icon/serve10_nor.png") no-repeat center;
+}
+
+.serve .serve-content .serve10:hover {
+  background: url("../images/icon/serve10_sel.png") no-repeat center;
 }
 
 /*0元领取精华备考资料包*/
@@ -619,6 +604,7 @@ i {
   line-height: 45px;
   border-radius: 5px;
   margin-top: 20px;
+  color: #888888;
 }
 
 .data-bag .get input::-webkit-input-placeholder {
@@ -691,16 +677,14 @@ i {
 
 .data-bag .get .submit {
   width: 60%;
+  height: 52px;
+  line-height: 52px;
   color: #FFFFFF;
-  background: #f78b2b;
-  border-radius: 26px;
   cursor: pointer;
   font-size: 18px;
   font-family: "Microsoft YaHei";
-}
-
-.data-bag .get .submit:hover {
-  background: #F78410;
+  text-indent: -9999px;
+  background: url("../images/btn/btn5.png") no-repeat center;
 }
 
 .about-us {
